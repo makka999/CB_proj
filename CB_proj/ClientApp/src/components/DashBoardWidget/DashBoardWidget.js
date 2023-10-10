@@ -15,7 +15,7 @@ export const DashBoardWidget = () => {
 
                 <tr>
                     <th>1</th>
-                    <th>krutkowidz@gmail.com</th>
+                    <th>xtzwwer@gmail.com</th>
                     <th>Exarem</th>
                     <th>admin</th>
                     <th> <FontAwesomeIcon icon={ faBars} /></th>
