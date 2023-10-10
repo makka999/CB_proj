@@ -1,7 +1,8 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./custom.css";
 import { RegisterPage } from "./Pages/RegisterPage/RegisterPage";
-
+import { LoginPage } from "./Pages/LoginPage/LoginPage";
+import {DashBoardPage } from "./Pages/DashBoardPage/DashBoardPage"
 export default function App() {
   const navigate = useNavigate();
 
@@ -16,6 +17,9 @@ export default function App() {
         element={<button onClick={handleClick}>Register!</button>}
       />
       <Route path="/sign-up" element={<RegisterPage />} />
+          <Route path="/sign-in" element={<LoginPage />} />
+          <Route path="/dashboard" element={<DashBoardPage />} />
+
     </Routes>
   );
 }

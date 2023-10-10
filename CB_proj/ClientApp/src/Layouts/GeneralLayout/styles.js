@@ -7,6 +7,12 @@ export const Nav = styled.div`
   display: flex;
   background: green;
 `;
-export const Left = styled.div``;
-export const Right = styled.div``;
+export const Left = styled.div`
+    width:50%;
+    height:100%;
+`;
+export const Right = styled.div`
+    width:50%;
+    height:100%;
+`;
 export const Footer = styled.div``;

@@ -6,9 +6,14 @@ import {
   FormLegend,
   Item,
 } from "./styles";
+import {useNavigate} from "react-router-dom"
 const Database = [];
 
 export const RegisterForm = () => {
+    const navigate = useNavigate();
+    const handleClick  = () => {
+     navigate("/sign-in")
+    };
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -49,7 +54,7 @@ export const RegisterForm = () => {
               />
             </Item>
 
-            <FormButton>Sign-in</FormButton>
+          <FormButton onClick={() => { handleClick() }}>Sign-up</FormButton>
           </FormArea>
         </Form>
       </Wrapper>
